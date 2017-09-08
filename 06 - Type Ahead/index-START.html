@@ -28,8 +28,8 @@ function findMatches(wordToMatch, cities) {
         const regex = new RegExp(wordToMatch, 'gi');
         return place.city.match(regex) || place.state.match(regex)
     });
+    console.log("cities: ", cities);
 }
-
 function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 }
